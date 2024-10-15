@@ -69,11 +69,14 @@ flutter build apk --dart-define=SECRET_KEY=SEKRET --flavor=staging
 cd build/app/outputs/flutter-apk/
 mkdir app
 cd app
-cd lib
-cd x86_64
+unzip ../app-release.apk
+cd build/app/outputs/flutter-apk/app/lib/x86_64
+
 
 
 strings libapp.so | grep init
+or
+strings libapp.so | grep token
 or
 grep SEKRET libapp.so
 
