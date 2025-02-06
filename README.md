@@ -31,6 +31,15 @@ dart-define provides a way to add the secrets to artifacts at build time so they
 --dart-define=SOME_VAR=SOME_VALUE
 --dart-define=DEBUG=true
 
+--release
+--flavor=staging
+--dart-define=app.flavor=staging
+--dart-define-from-file="values.json"
+--dart-define-from-file=".env"
+--dart-define=SOME_VAR=SOME_VALUE
+--dart-define=DEBUG=true
+--dart-define=SECRET_KEY=SEKRET
+
 
 To fetch Url value from file
 

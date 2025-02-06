@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Env obj = Env();
+ //   Env obj = Env();
 
     return Scaffold(
       appBar: AppBar(
@@ -127,10 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
               const Text(
                 '5) token value using .env file and obfuscation',
               ),
-              Text(
-                obj.token,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
+              // Text(
+              //   obj.token,
+              //   style: Theme.of(context).textTheme.headlineMedium,
+              // ),
               const SizedBox(
                 height: 20,
               ),
